@@ -3,7 +3,7 @@
 include __DIR__ . "/../db/products.php";
 include __DIR__ . "/../classes/Cart.php";
 
-
+$cart = new Cart($order);
 // includere classe Cart
 // passare al costruttore array $order
 // invocare metodo setTotalPrice
