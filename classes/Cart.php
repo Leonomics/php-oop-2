@@ -10,10 +10,9 @@ class Cart{
     public $order;
     public $totalPrice;
 
-    function __construct($order, $totalPrice)
+    function __construct($order)
     {
         $this->order = $order;
-        $this->totalPrice = $totalPrice;
     }
 
     public function setTotalPrice($order){
