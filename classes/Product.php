@@ -12,7 +12,14 @@ class Product{
         $this->name = $name;
         $this->poster = $poster;
         $this->description = $description;
-        $this->brand = $brand;
-        $this->price = $price;
+        $this->setBrand($brand);
+        $this-> price = $price;
+    }
+    function setBrand($brand){
+        if (is_string($brand)){
+            $this-> brand = $brand;
+        }else{
+            throw new Exception('brand is not a string');
+        }
     }
 }
