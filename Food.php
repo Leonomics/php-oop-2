@@ -1,15 +1,17 @@
 <?php
 
 include_once __DIR__ . '/Product.php';
+include_once __DIR__ . '/PhysicalProduct.php';
 
 class Food extends PhysicalProduct{
     public $animalType;
-    public $vegan = true;
+    public $vegan;
 
-    function __construct($param)
+    function __construct( $name, $poster, $description, $brand, $price, $weight, $volume, $animalType, $vegan)
     {
-        $this->animalType = $param['animalType'];
-        $this->vegan = $param['vegan'];
+        parent::__construct($name, $poster, $description, $brand, $price, $weight, $volume);
+        $this->animalType = $animalType;
+        $this->vegan = $vegan;
     }
 }
 ?>

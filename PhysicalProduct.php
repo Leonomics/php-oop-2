@@ -6,9 +6,10 @@ class PhysicalProduct extends Product{
     public $weight;
     public $volume;
 
-    function __construct($param)
+    function __construct($name, $poster, $description, $brand, $price, $weight, $volume)
     {
-        $this->weight = $param['weight'];
-        $this->volume = $param['volume'];
+        parent::__construct($name, $poster, $description, $brand, $price);
+        $this->weight = $weight;
+        $this->volume = $volume;
     }
 }

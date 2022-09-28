@@ -4,9 +4,9 @@ include_once __DIR__ . '/Product.php';
 class Toy extends PhysicalProduct{
     public $duration;
 
-    function __construct($param)
+    function __construct($duration)
     {
-        $this->duration = $param['duration'];
+        $this->duration = $duration;
     }
 }
 ?>
