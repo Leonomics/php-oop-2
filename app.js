@@ -4,16 +4,25 @@ const app = new Vue({
 
     data: {
         products:[],
+        order:[]
     },
 
     methods: {
         fetchProducts(){
             axios
-            .get("./products.php")
+            .get("./API/products.php")
             .then((res)=> {
                 console.log(res)
                 const {response} = res.data
                 this.products = response
+            })
+
+            axios
+            .get("./API/order.php")
+            .then((res)=> {
+                console.log(res)
+                const {response} = res.data
+                this.order = response
             })
         },
     },
