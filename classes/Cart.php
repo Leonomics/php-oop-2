@@ -1,6 +1,6 @@
 <?php
 
-include __DIR__ . '/../db/products.php';
+// include __DIR__ . '/../db/products.php';
 // inizializzare classe Cart
 // inizializzare $order (array di prodotti) e $total_price
 // implementare costruttore che valorizza $this->order

@@ -1,6 +1,6 @@
 <?php
 
-include_once __DIR__ . '/Product.php';
+// include_once __DIR__ . '/Product.php';
 include_once __DIR__ . '/PhysicalProduct.php';
 class PetHouse extends PhysicalProduct{
     public $animalType;
